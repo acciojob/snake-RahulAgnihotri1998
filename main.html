@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<title>Snake Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<div id="gameContainer">
+		<!-- 40x40 separate pixels with unique id -->
+		<div class="pixel" id="pixel1"></div>
+		<div class="pixel" id="pixel2"></div>
+		<!-- Add more pixels until pixel1600 -->
+		<div class="pixel" id="pixel1600"></div>
 
+		<!-- Food with class name 'food' and unique id -->
+		<div class="food" id="food1"></div>
+
+		<!-- Snake body pixels with class name 'snakeBodyPixel' and unique id -->
+		<div class="snakeBodyPixel" id="snakePixel1"></div>
+		<!-- Add more snake pixels until snakePixel10 -->
+		<div class="snakeBodyPixel" id="snakePixel10"></div>
+	</div>
+
+	<!-- Score board with class name 'scoreBoard' -->
+	<div class="scoreBoard"></div>
+
+	<script src="script.js"></script>
 </body>
-
 </html>
+
