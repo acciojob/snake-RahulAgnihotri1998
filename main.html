@@ -1,30 +1,30 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
-	<title>Snake Game</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div id="gameContainer">
-		<!-- 40x40 separate pixels with unique id -->
-		<div class="pixel" id="pixel1"></div>
-		<div class="pixel" id="pixel2"></div>
-		<!-- Add more pixels until pixel1600 -->
-		<div class="pixel" id="pixel1600"></div>
-
-		<!-- Food with class name 'food' and unique id -->
-		<div class="food" id="food1"></div>
-
-		<!-- Snake body pixels with class name 'snakeBodyPixel' and unique id -->
-		<div class="snakeBodyPixel" id="snakePixel1"></div>
-		<!-- Add more snake pixels until snakePixel10 -->
-		<div class="snakeBodyPixel" id="snakePixel10"></div>
+	<div class="game_container" id="gameContainer">
 	</div>
+    <script type="text/javascript" src="./script.js">
+</script>
+</body>
+</html> -->
 
-	<!-- Score board with class name 'scoreBoard' -->
-	<div class="scoreBoard"></div>
-
-	<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="game_body" id="gameBody">
+        <div class="game_board" id="gameBoard"></div>
+    </div>
+    <p class="score" id="score">Score:<span class="span" id="span"></span></p>
+    <script src="./script.js"></script>
 </body>
 </html>
-
