@@ -1,27 +1,89 @@
-#gameContainer {
-	height: 400px;
-	width: 400px;
-	display: flex;
-	flex-wrap: wrap;
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game_container{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-rows: repeat(40,1fr);
+}
+.pixel_div{
+    background-color: grey;
+    border: 1px solid white;
+}
+.snakeBodyPixel{
+    background-color: yellow;
+    z-index: 999;
+}
+.food{
+    background-color: red;
+    z-index: 998;
+}  */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
-.pixel {
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.game_body{
+    height: 100%;
+    width: 100%;
+    background-size: 200vh 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.food {
-	background-color: red;
+.game_board{
+    height: 90vmin;
+    width: 85vmin;
+    background: linear-gradient(lightgreen,rgb(21, 134, 21));
+    box-shadow: 0 0 10px darkgreen;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    
 }
 
-.snakeBodyPixel {
-	background-color: green;
+.snakeBodyPixel{
+    background:linear-gradient(red,black);
+    border-radius: 5px;
+}
+.snake{
+    background-color: yellow;
+    border: 2px dotted black;
+    border-radius: 10px;
+}
+.food{
+    background: linear-gradient(red,yellow);
+    border-radius: 2px;
+    border: 2px solid blue;
 }
 
-.scoreBoard {
-	text-align: center;
-	font-size: 24px;
-	font-weight: bold;
+.score{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
 }
-/* Your CSS Code here. */
